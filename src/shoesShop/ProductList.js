@@ -97,12 +97,20 @@ export default class ProductList extends Component {
   render() {
     return (
       <div>
-        <h3
+        <h1 className="text-center fw-light">Shoes Shop</h1>
+
+        <i
           onClick={this.showCart}
-          className="text-end pe-5"
-          style={{ cursor: "pointer" }}>
-          Giỏ hàng ({this.calcTotalProductIncart()})
-        </h3>
+          class="fa-solid fa-cart-shopping"
+          style={{
+            cursor: "pointer",
+            fontSize: "25px",
+            display: "flex",
+            justifyContent: "right",
+            marginRight: "20px",
+          }}>
+          ({this.calcTotalProductIncart()})
+        </i>
         <div className={styles.row}>{this.renderProduct()}</div>
         {this.state.selectedItem && (
           <ProductDetail item={this.state.selectedItem} />
