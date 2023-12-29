@@ -1,0 +1,10 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  padding: 0 15px;
+  width: 25%;
+  box-sizing: border-box;
+}

@@ -1,0 +1,31 @@
+.card{
+    border: 1px solid gray;
+    margin: 30px 0;
+}
+
+.cardBody{
+    padding: 15px;
+}
+
+.addToCarts{
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.addToCarts:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+
+.img{
+    width: 100%;
+}
